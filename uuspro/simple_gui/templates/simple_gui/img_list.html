@@ -1,0 +1,18 @@
+﻿{% extends 'simple_gui/base.html' %}
+{% block body_block %}
+<!--TODO -- ADD LOGOUT -->
+
+<table>
+    {% for img in object_list %}
+    <tr>
+        <td>
+        <a href="{{view.media_directory|add:img.image.name }}">
+            <img  src="{{view.media_directory|add:img.image.name }}" />
+        </a>
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}
+
+

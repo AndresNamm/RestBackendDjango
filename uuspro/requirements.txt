@@ -1,0 +1,8 @@
+coreapi==2.1.1
+Django==1.10.3
+djangorestframework==3.5.3
+itypes==1.1.0
+Pillow==3.4.2
+psycopg2==2.6.2
+requests==2.12.3
+uritemplate==3.0.0

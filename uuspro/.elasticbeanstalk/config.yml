@@ -1,0 +1,16 @@
+branch-defaults:
+  default:
+    environment: tuts-env
+  devel:
+    environment: tuts-devel
+  master:
+    environment: tuts-env
+global:
+  application_name: django-tuts
+  branch: null
+  default_ec2_keyname: loki
+  default_platform: Python 3.4
+  default_region: us-west-2
+  profile: eb-cli
+  repository: null
+  sc: null

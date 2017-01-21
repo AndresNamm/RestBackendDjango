@@ -1,0 +1,35 @@
+﻿{% extends 'simple_gui/base.html' %}
+{% load static %}
+{% block body_block %}
+<!--TODO -- ADD LOGOUT -->
+
+
+<table id="myTable" class="tablesorter">
+    <thead>
+        <tr>
+            <th>Title
+            </th>
+            <th>Start time
+            </th>
+            <th>Duration
+            </th>
+        </tr>
+    </thead>
+
+    <tbody>
+        {% for group in object_list %}
+    
+    <tr>
+        <td>
+            <a href="/simplegui/myimages/{{group.id}}/">{{group.title}}</a>
+        </td>
+        <td>{{group.start_time}}
+        </td>
+        <td>{{group.duration}}
+        </td>
+
+    </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

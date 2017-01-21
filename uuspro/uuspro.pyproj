@@ -1,0 +1,479 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5c387917-830f-4a4e-8ee8-7480025235f1}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile>manage.py</StartupFile>
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{5F0BE9CA-D677-4A4D-8806-6076C0FAAD37};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Django launcher</LaunchProvider>
+    <InterpreterId>{b8b39ba9-af8d-4cab-8770-a0002a87034b}</InterpreterId>
+    <InterpreterVersion>3.5</InterpreterVersion>
+    <UseIISExpress>true</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="requirements.txt" />
+    <Content Include="simple_gui\static\simple_gui\css\bootstrap-theme.css" />
+    <Content Include="simple_gui\static\simple_gui\css\bootstrap-theme.css.map" />
+    <Content Include="simple_gui\static\simple_gui\css\bootstrap-theme.min.css" />
+    <Content Include="simple_gui\static\simple_gui\css\bootstrap-theme.min.css.map" />
+    <Content Include="simple_gui\static\simple_gui\css\bootstrap.css" />
+    <Content Include="simple_gui\static\simple_gui\css\bootstrap.css.map" />
+    <Content Include="simple_gui\static\simple_gui\css\bootstrap.min.css" />
+    <Content Include="simple_gui\static\simple_gui\css\bootstrap.min.css.map" />
+    <Content Include="simple_gui\static\simple_gui\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="simple_gui\static\simple_gui\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="simple_gui\static\simple_gui\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="simple_gui\static\simple_gui\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="simple_gui\static\simple_gui\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="simple_gui\static\simple_gui\main.js" />
+    <Content Include="simple_gui\static\simple_gui\js\bootstrap.js" />
+    <Content Include="simple_gui\static\simple_gui\js\bootstrap.min.js" />
+    <Content Include="simple_gui\static\simple_gui\js\jquery.js" />
+    <Content Include="simple_gui\static\simple_gui\js\jquery.tablesorter.js" />
+    <Content Include="simple_gui\static\simple_gui\js\npm.js" />
+    <Content Include="simple_gui\static\simple_gui\main.css" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\addons\.svn\all-wcprops" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\addons\.svn\entries" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\addons\pager\.svn\all-wcprops" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\addons\pager\.svn\entries" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\addons\pager\.svn\prop-base\jquery.tablesorter.pager.css.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\addons\pager\.svn\prop-base\jquery.tablesorter.pager.js.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\addons\pager\.svn\text-base\jquery.tablesorter.pager.css.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\addons\pager\.svn\text-base\jquery.tablesorter.pager.js.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\addons\pager\jquery.tablesorter.pager.css" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\addons\pager\jquery.tablesorter.pager.js" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\build.xml" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\build\.svn\all-wcprops" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\build\.svn\entries" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\build\.svn\prop-base\js.jar.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\build\.svn\prop-base\jsmin.js.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\build\.svn\prop-base\min.js.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\build\.svn\prop-base\pack.js.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\build\.svn\prop-base\packer.js.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\build\.svn\prop-base\ParseMaster.js.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\build\.svn\prop-base\writeFile.js.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\build\.svn\text-base\js.jar.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\build\.svn\text-base\jsmin.js.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\build\.svn\text-base\min.js.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\build\.svn\text-base\pack.js.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\build\.svn\text-base\packer.js.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\build\.svn\text-base\ParseMaster.js.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\build\.svn\text-base\writeFile.js.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\build\js.jar" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\build\jsmin.js" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\build\min.js" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\build\pack.js" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\build\packer.js" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\build\ParseMaster.js" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\build\writeFile.js" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\changelog" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\docs\.svn\all-wcprops" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\docs\.svn\entries" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\docs\.svn\prop-base\example-ajax.html.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\docs\.svn\prop-base\example-empty-table.html.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\docs\.svn\prop-base\example-extending-defaults.html.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\docs\.svn\prop-base\example-meta-headers.html.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\docs\.svn\prop-base\example-meta-parsers.html.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\docs\.svn\prop-base\example-meta-sort-list.html.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\docs\.svn\prop-base\example-option-debug.html.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\docs\.svn\prop-base\example-option-digits.html.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\docs\.svn\prop-base\example-option-sort-force.html.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\docs\.svn\prop-base\example-option-sort-key.html.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\docs\.svn\prop-base\example-option-sort-list.html.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\docs\.svn\prop-base\example-option-sort-order.html.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\docs\.svn\prop-base\example-option-text-extraction.html.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\docs\.svn\prop-base\example-options-headers.html.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\docs\.svn\prop-base\example-pager.html.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\docs\.svn\prop-base\example-parsers.html.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\docs\.svn\prop-base\example-trigger-sort.html.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\docs\.svn\prop-base\example-triggers.html.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\docs\.svn\prop-base\example-update-cell.html.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\docs\.svn\prop-base\example-widgets.html.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\docs\.svn\prop-base\index.html.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\docs\.svn\text-base\example-ajax.html.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\docs\.svn\text-base\example-empty-table.html.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\docs\.svn\text-base\example-extending-defaults.html.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\docs\.svn\text-base\example-meta-headers.html.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\docs\.svn\text-base\example-meta-parsers.html.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\docs\.svn\text-base\example-meta-sort-list.html.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\docs\.svn\text-base\example-option-debug.html.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\docs\.svn\text-base\example-option-digits.html.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\docs\.svn\text-base\example-option-sort-force.html.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\docs\.svn\text-base\example-option-sort-key.html.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\docs\.svn\text-base\example-option-sort-list.html.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\docs\.svn\text-base\example-option-sort-order.html.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\docs\.svn\text-base\example-option-text-extraction.html.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\docs\.svn\text-base\example-options-headers.html.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\docs\.svn\text-base\example-pager.html.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\docs\.svn\text-base\example-parsers.html.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\docs\.svn\text-base\example-trigger-sort.html.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\docs\.svn\text-base\example-triggers.html.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\docs\.svn\text-base\example-update-cell.html.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\docs\.svn\text-base\example-widgets.html.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\docs\.svn\text-base\index.html.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\docs\.tmp_index.html.55071~" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\docs\assets\.svn\all-wcprops" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\docs\assets\.svn\entries" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\docs\assets\.svn\prop-base\ajax-content.html.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\docs\assets\.svn\text-base\ajax-content.html.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\docs\assets\ajax-content.html" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\docs\css\.svn\all-wcprops" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\docs\css\.svn\entries" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\docs\css\.svn\prop-base\jq.css.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\docs\css\.svn\text-base\jq.css.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\docs\css\jq.css" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\docs\example-ajax.html" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\docs\example-empty-table.html" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\docs\example-extending-defaults.html" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\docs\example-meta-headers.html" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\docs\example-meta-parsers.html" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\docs\example-meta-sort-list.html" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\docs\example-option-debug.html" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\docs\example-option-digits.html" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\docs\example-option-sort-force.html" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\docs\example-option-sort-key.html" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\docs\example-option-sort-list.html" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\docs\example-option-sort-order.html" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\docs\example-option-text-extraction.html" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\docs\example-options-headers.html" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\docs\example-pager.html" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\docs\example-parsers.html" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\docs\example-trigger-sort.html" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\docs\example-triggers.html" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\docs\example-update-cell.html" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\docs\example-widgets.html" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\docs\img\.svn\all-wcprops" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\docs\img\.svn\entries" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\docs\img\.svn\prop-base\external.png.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\docs\img\.svn\text-base\external.png.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\docs\img\external.png" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\docs\index.html" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\docs\js\.svn\all-wcprops" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\docs\js\.svn\entries" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\docs\js\.svn\prop-base\docs.js.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\docs\js\.svn\prop-base\examples.js.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\docs\js\.svn\text-base\docs.js.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\docs\js\.svn\text-base\examples.js.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\docs\js\docs.js" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\docs\js\examples.js" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\jquery-latest.js" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\jquery.metadata.js" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\jquery.tablesorter.js" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\jquery.tablesorter.min.js" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\tests\.svn\all-wcprops" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\tests\.svn\entries" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\tests\.svn\prop-base\cell.metadata.html.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\tests\.svn\prop-base\checkbox.html.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\tests\.svn\prop-base\colspan.html.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\tests\.svn\prop-base\demo.html.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\tests\.svn\prop-base\index.html.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\tests\.svn\prop-base\large.html.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\tests\.svn\prop-base\lockedOrder.html.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\tests\.svn\prop-base\metadata.html.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\tests\.svn\prop-base\multiple-headers.html.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\tests\.svn\prop-base\pager.html.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\tests\.svn\text-base\cell.metadata.html.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\tests\.svn\text-base\checkbox.html.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\tests\.svn\text-base\colspan.html.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\tests\.svn\text-base\demo.html.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\tests\.svn\text-base\index.html.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\tests\.svn\text-base\large.html.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\tests\.svn\text-base\lockedOrder.html.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\tests\.svn\text-base\metadata.html.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\tests\.svn\text-base\multiple-headers.html.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\tests\.svn\text-base\pager.html.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\tests\assets\.svn\all-wcprops" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\tests\assets\.svn\entries" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\tests\assets\.svn\prop-base\ajax-content.html.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\tests\assets\.svn\text-base\ajax-content.html.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\tests\assets\ajax-content.html" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\tests\cell.metadata.html" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\tests\checkbox.html" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\tests\colspan.html" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\tests\demo.html" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\tests\index.html" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\tests\large.html" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\tests\lockedOrder.html" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\tests\metadata.html" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\tests\multiple-headers.html" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\tests\pager.html" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\themes\.svn\all-wcprops" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\themes\.svn\entries" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\themes\blue\.svn\all-wcprops" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\themes\blue\.svn\entries" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\themes\blue\.svn\prop-base\asc.gif.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\themes\blue\.svn\prop-base\bg.gif.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\themes\blue\.svn\prop-base\blue.zip.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\themes\blue\.svn\prop-base\desc.gif.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\themes\blue\.svn\prop-base\style.css.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\themes\blue\.svn\text-base\asc.gif.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\themes\blue\.svn\text-base\bg.gif.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\themes\blue\.svn\text-base\blue.zip.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\themes\blue\.svn\text-base\desc.gif.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\themes\blue\.svn\text-base\style.css.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\themes\blue\asc.gif" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\themes\blue\bg.gif" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\themes\blue\blue.zip" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\themes\blue\desc.gif" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\themes\blue\style.css" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\themes\green\.svn\all-wcprops" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\themes\green\.svn\entries" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\themes\green\.svn\prop-base\asc.png.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\themes\green\.svn\prop-base\bg.png.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\themes\green\.svn\prop-base\desc.png.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\themes\green\.svn\prop-base\green.zip.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\themes\green\.svn\prop-base\style.css.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\themes\green\.svn\text-base\asc.png.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\themes\green\.svn\text-base\bg.png.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\themes\green\.svn\text-base\desc.png.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\themes\green\.svn\text-base\green.zip.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\themes\green\.svn\text-base\style.css.svn-base" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\themes\green\asc.png" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\themes\green\bg.png" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\themes\green\desc.png" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\themes\green\green.zip" />
+    <Content Include="simple_gui\static\simple_gui\tablesorter\themes\green\style.css" />
+    <Content Include="simple_gui\templates\registration\login.html" />
+    <Content Include="simple_gui\templates\registration\signup.html" />
+    <Content Include="simple_gui\templates\simple_gui\group_list.html" />
+    <Content Include="simple_gui\templates\simple_gui\img_list.html" />
+    <Content Include="simple_gui\templates\simple_gui\base.html" />
+    <Content Include="static\myimages.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="manage.py" />
+    <Compile Include="simple_gui\admin.py" />
+    <Compile Include="simple_gui\apps.py" />
+    <Compile Include="simple_gui\migrations\__init__.py" />
+    <Compile Include="simple_gui\models.py" />
+    <Compile Include="simple_gui\tests.py" />
+    <Compile Include="simple_gui\urls.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="simple_gui\views.py" />
+    <Compile Include="simple_gui\__init__.py" />
+    <Compile Include="uusapp\admin.py" />
+    <Compile Include="uusapp\apps.py" />
+    <Compile Include="uusapp\decorators.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="uusapp\management\commands\createsu.py" />
+    <Compile Include="uusapp\management\commands\__init__.py" />
+    <Compile Include="uusapp\management\__init__.py" />
+    <Compile Include="uusapp\migrations\0001_initial.py" />
+    <Compile Include="uusapp\migrations\__init__.py" />
+    <Compile Include="uusapp\models.py" />
+    <Compile Include="uusapp\permissions.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="uusapp\serializers.py" />
+    <Compile Include="uusapp\tests.py" />
+    <Compile Include="uusapp\urls.py" />
+    <Compile Include="uusapp\views.py" />
+    <Compile Include="uusapp\__init__.py" />
+    <Compile Include="uuspro\settings.py" />
+    <Compile Include="uuspro\urls.py" />
+    <Compile Include="uuspro\wsgi.py" />
+    <Compile Include="uuspro\__init__.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="media\" />
+    <Folder Include="simple_gui\" />
+    <Folder Include="simple_gui\migrations\" />
+    <Folder Include="simple_gui\static\" />
+    <Folder Include="simple_gui\static\simple_gui\" />
+    <Folder Include="simple_gui\static\simple_gui\css\" />
+    <Folder Include="simple_gui\static\simple_gui\fonts\" />
+    <Folder Include="simple_gui\static\simple_gui\js\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\addons\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\addons\.svn\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\addons\.svn\prop-base\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\addons\.svn\props\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\addons\.svn\text-base\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\addons\.svn\tmp\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\addons\.svn\tmp\prop-base\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\addons\.svn\tmp\props\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\addons\.svn\tmp\text-base\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\addons\pager\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\addons\pager\.svn\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\addons\pager\.svn\prop-base\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\addons\pager\.svn\props\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\addons\pager\.svn\text-base\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\addons\pager\.svn\tmp\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\addons\pager\.svn\tmp\prop-base\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\addons\pager\.svn\tmp\props\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\addons\pager\.svn\tmp\text-base\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\build\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\build\.svn\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\build\.svn\prop-base\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\build\.svn\props\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\build\.svn\text-base\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\build\.svn\tmp\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\build\.svn\tmp\prop-base\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\build\.svn\tmp\props\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\build\.svn\tmp\text-base\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\docs\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\docs\.svn\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\docs\.svn\prop-base\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\docs\.svn\props\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\docs\.svn\text-base\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\docs\.svn\tmp\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\docs\.svn\tmp\prop-base\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\docs\.svn\tmp\props\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\docs\.svn\tmp\text-base\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\docs\assets\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\docs\assets\.svn\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\docs\assets\.svn\prop-base\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\docs\assets\.svn\props\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\docs\assets\.svn\text-base\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\docs\assets\.svn\tmp\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\docs\assets\.svn\tmp\prop-base\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\docs\assets\.svn\tmp\props\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\docs\assets\.svn\tmp\text-base\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\docs\css\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\docs\css\.svn\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\docs\css\.svn\prop-base\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\docs\css\.svn\props\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\docs\css\.svn\text-base\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\docs\css\.svn\tmp\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\docs\css\.svn\tmp\prop-base\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\docs\css\.svn\tmp\props\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\docs\css\.svn\tmp\text-base\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\docs\img\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\docs\img\.svn\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\docs\img\.svn\prop-base\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\docs\img\.svn\props\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\docs\img\.svn\text-base\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\docs\img\.svn\tmp\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\docs\img\.svn\tmp\prop-base\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\docs\img\.svn\tmp\props\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\docs\img\.svn\tmp\text-base\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\docs\js\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\docs\js\.svn\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\docs\js\.svn\prop-base\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\docs\js\.svn\props\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\docs\js\.svn\text-base\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\docs\js\.svn\tmp\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\docs\js\.svn\tmp\prop-base\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\docs\js\.svn\tmp\props\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\docs\js\.svn\tmp\text-base\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\tests\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\tests\.svn\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\tests\.svn\prop-base\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\tests\.svn\props\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\tests\.svn\text-base\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\tests\.svn\tmp\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\tests\.svn\tmp\prop-base\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\tests\.svn\tmp\props\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\tests\.svn\tmp\text-base\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\tests\assets\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\tests\assets\.svn\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\tests\assets\.svn\prop-base\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\tests\assets\.svn\props\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\tests\assets\.svn\text-base\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\tests\assets\.svn\tmp\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\tests\assets\.svn\tmp\prop-base\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\tests\assets\.svn\tmp\props\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\tests\assets\.svn\tmp\text-base\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\themes\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\themes\.svn\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\themes\.svn\prop-base\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\themes\.svn\props\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\themes\.svn\text-base\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\themes\.svn\tmp\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\themes\.svn\tmp\prop-base\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\themes\.svn\tmp\props\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\themes\.svn\tmp\text-base\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\themes\blue\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\themes\blue\.svn\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\themes\blue\.svn\prop-base\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\themes\blue\.svn\props\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\themes\blue\.svn\text-base\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\themes\blue\.svn\tmp\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\themes\blue\.svn\tmp\prop-base\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\themes\blue\.svn\tmp\props\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\themes\blue\.svn\tmp\text-base\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\themes\green\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\themes\green\.svn\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\themes\green\.svn\prop-base\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\themes\green\.svn\props\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\themes\green\.svn\text-base\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\themes\green\.svn\tmp\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\themes\green\.svn\tmp\prop-base\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\themes\green\.svn\tmp\props\" />
+    <Folder Include="simple_gui\static\simple_gui\tablesorter\themes\green\.svn\tmp\text-base\" />
+    <Folder Include="simple_gui\templates\" />
+    <Folder Include="simple_gui\templates\registration\" />
+    <Folder Include="simple_gui\templates\simple_gui\" />
+    <Folder Include="static\" />
+    <Folder Include="uusapp" />
+    <Folder Include="uusapp\management" />
+    <Folder Include="uusapp\management\commands" />
+    <Folder Include="uusapp\migrations" />
+    <Folder Include="uuspro" />
+  </ItemGroup>
+  <ItemGroup>
+    <Interpreter Include="..\env\">
+      <Id>{b8b39ba9-af8d-4cab-8770-a0002a87034b}</Id>
+      <BaseInterpreter>{9a7a9026-48c1-4688-9d5d-e5699d47d074}</BaseInterpreter>
+      <Version>3.5</Version>
+      <Description>env (Python 64-bit 3.5)</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <LibraryPath>Lib\</LibraryPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>Amd64</Architecture>
+    </Interpreter>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Django.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:31777/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>True</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

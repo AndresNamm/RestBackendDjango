@@ -1,0 +1,24 @@
+﻿body {
+}
+
+article {
+    min-height: 900px;
+}
+
+img {
+    width: 600px;
+    height: 600px;
+    background-size: cover;
+}
+
+header, footer {
+    background-color: aliceblue;
+    width: 100%;
+    height: 150px;
+    text-align: center;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}

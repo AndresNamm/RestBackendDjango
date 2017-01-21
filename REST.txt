@@ -1,0 +1,28 @@
+I havent provided the amazon links, because I turned the instances off for development
+to avoid wasting resources, so I to development on my localhost.
+REST Functionalities
+
+Receive token
+http --json POST 127.0.0.1:8000/api-token-auth/ 
+username=“mauno“ password=“foobarfoo“
+Add Pictures with token
+http -f POST http://127.0.0.1:8000/uusapp/addimage/ 
+title="peeter" image@~\test.jpg "Authorization: Token b85bd5705373081b09bcc59a20d97052cbc566fa" -v
+Register user
+http --json POST http://127.0.0.1:8000/uusapp/register/ 
+username="sinuema" password=“foobarfoo“ -v
+Get pictures through security check
+http --json GET 127.0.0.1:8000/uusapp/getimage/?id= 
+"3" "Authorization: Token b85bd5705373081b09bcc59a20d97052cbc566fa" -v
+Get url - if the checurity check doesnt work out
+http --json GET 127.0.0.1:8000/uusapp/getimageurl/?id= 
+"3" "Authorization: Token b85bd5705373081b09bcc59a20d97052cbc566fa" -v
+GetGroupImages
+http --json GET 127.0.0.1:8000/uusapp/groupimages/?id= 
+"3" "Authorization: Token b85bd5705373081b09bcc59a20d97052cbc566fa" -v
+GetUserGroups
+http --json GET 127.0.0.1:8000/uusapp/usergroups/ 
+"Authorization: Token b85bd5705373081b09bcc59a20d97052cbc566fa" -v
+AddUserGroup for current user
+http --json POST 127.0.0.1:8000/uusapp/usergroups/ 
+title="Test" duration="10"  "Authorization: Token b85bd5705373081b09bcc59a20d97052cbc566fa" -v

@@ -1,0 +1,11 @@
+﻿
+<a href="/simplegui/register/">Register Accont</a>
+
+{% block body_block %}
+  <h2>Login</h2>
+  <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Login</button>
+  </form>
+{% endblock %}

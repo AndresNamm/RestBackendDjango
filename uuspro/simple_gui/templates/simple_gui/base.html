@@ -1,0 +1,40 @@
+﻿{% load static %}
+<html>
+<head>
+    <title>Simple_Gui</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'simple_gui/main.css' %}" />
+    <!-- Bootstrap -->
+    <link href="{% static 'simple_gui/css/bootstrap.min.css' %}" rel="stylesheet">
+    <!--Tablesort-->
+    <link href="{% static 'simple_gui/tablesorter/themes/blue/style.css' %}" rel="stylesheet">
+    
+
+
+
+</head>
+<!-- TODO Mõtle, et äkki oleks mõistlik referentsida jqueryt ja bootstrappi igas apis samamoodi-->
+<body>
+    <header>
+        <h1>Simple GUI Header</h1>
+        <a href="/simplegui/logout/">Logout</a><br />
+        <a href="/simplegui/myimages/">View All My images in a list</a><br />
+        <a href="/simplegui/apimyimages/">GET all My images in a json string - makes a http get request to my REST service</a><br />
+        <a href="/uusapp/images/">Add Image</a>
+    </header>
+    <!-- Page specific content goes here -->
+    <article>
+        {% block body_block %}{% endblock %}
+    </article>
+    <footer>Simple Gui Footer</footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="{% static 'simple_gui/js/jquery.js' %}"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="{% static 'simple_gui/js/bootstrap.min.js' %}"></script>
+    <!--Plugins-->
+    <script src="{% static 'simple_gui/tablesorter/jquery.tablesorter.js' %}"></script>
+    <!--My Javascript-->
+    <script src="{% static 'simple_gui/main.js' %}"></script>
+
+
+</body>
+</html>
