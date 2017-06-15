@@ -19,16 +19,10 @@ from rest_framework.response import Response
 from rest_framework.authentication import TokenAuthentication
 from rest_framework.permissions import IsAuthenticated
 from django.shortcuts import redirect
+from django.template.loader import get_template
 
 def index(request):
-    latest_question_list = Img.objects.all()
-    template = loader.get_template('polls/index.html')
-    context = {
-        'latest_question_list': latest_question_list,
-    }
-
-
-    return HttpResponse("Hello, world. You're at the uusapp index.")
+    return HttpResponse("You're at the uusapp index.")
 
 class ImgList (generics.ListCreateAPIView): 
     #authentication_classes = (TokenAuthentication,)
