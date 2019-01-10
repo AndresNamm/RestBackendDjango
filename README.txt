@@ -5,11 +5,11 @@ You can actually access most of the urls in a web browser as well. There is a ni
 To be able to execute http you must install httpie with command: "pip install httpie" . 
 
 
-http --json POST 127.0.0.1:8000/api-token-auth/ username=“mauno“ password=“foobarfoo“
+http --json POST 127.0.0.1:8000/api-token-auth/ username=â€œmaunoâ€œ password=â€œfoobarfooâ€œ
 Add Pictures with token
 http -f POST http://127.0.0.1:8000/uusapp/addimage/ title="peeter" image@~\test.jpg "Authorization: Token b85bd5705373081b09bcc59a20d97052cbc566fa" -v
 Register user
-http --json POST http://127.0.0.1:8000/uusapp/register/ username="sinuema" password=“foobarfoo“ -v
+http --json POST http://127.0.0.1:8000/uusapp/register/ username="sinuema" password=â€œfoobarfooâ€œ -v
 Get pictures through security check 
 http --json GET 127.0.0.1:8000/uusapp/getimage/?id="3" "Authorization: Token b85bd5705373081b09bcc59a20d97052cbc566fa" -v
 Get url - if the checurity check doesnt work out
@@ -41,7 +41,7 @@ if(sys.platform == "linux"):
 			'ENGINE': 'django.db.backends.postgresql_psycopg2',
 			'NAME': "ebdb",
 			'USER': "administraator",
-			'PASSWORD': "Nossuonbeebi92",
+			'PASSWORD': "kalsssds",
 			'HOST': "aaghowdt333l1r.cbfuxup0zpv7.us-west-2.rds.amazonaws.com",
 			'PORT': 5432,
 		}
